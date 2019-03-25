@@ -9,7 +9,7 @@ readme = "README.md"
 keywords = ["chess","ai","engine","game","uci"]
 license = "MIT"
 categories = ["games","game-engines","command-line-utilities"]
-repository = "https://github.com/sfleischman105/Pleco"
+repository = "https://github.com/malbertoni/Pleco"
 autobenches = false
 
 include = [
