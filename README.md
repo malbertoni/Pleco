@@ -4,7 +4,7 @@ Pleco is a chess Engine & Library derived from Stockfish, written entirely in Ru
 
 [![Pleco crate](https://img.shields.io/crates/v/pleco.svg)](https://crates.io/crates/pleco)
 [![Pleco crate](https://img.shields.io/crates/v/pleco_engine.svg)](https://crates.io/crates/pleco_engine)
-[![Build Status](https://api.travis-ci.org/sfleischman105/Pleco.svg?branch=master)](https://travis-ci.org/sfleischman105/Pleco)
+[![Build Status](https://api.travis-ci.org/malbertoni/Pleco.svg?branch=master)](https://travis-ci.org/malbertoni/Pleco)
 
 
 This project is split into two crates, `pleco`, which contains the library functionality, and `pleco_engine`, which contains the
@@ -22,7 +22,7 @@ between the two languages, as well as for educational purposes.
 Standalone Installation and Use
 -------
 
-To use pleco as an executable, please [navigate to here](https://github.com/sfleischman105/Pleco/tree/master/pleco_engine) and read the `README.md`. 
+To use pleco as an executable, please [navigate to here](https://github.com/malbertoni/Pleco/tree/master/pleco_engine) and read the `README.md`. 
 
 
 Using Pleco as a Library
@@ -94,7 +94,7 @@ board.undo_move();
 assert_eq!(board.moves_played(),0);
 ```
 
-For more informaton about `pleco` as a library, see the [pleco README.md](https://github.com/sfleischman105/Pleco/tree/master/pleco).
+For more informaton about `pleco` as a library, see the [pleco README.md](https://github.com/malbertoni/Pleco/tree/master/pleco).
 
 Contributing
 -------
