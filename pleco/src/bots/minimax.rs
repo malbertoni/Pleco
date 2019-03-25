@@ -1,6 +1,6 @@
 //! The minimax algorithm.
-use board::*;
 use super::*;
+use board::*;
 
 pub fn minimax(board: &mut Board, depth: u16) -> ScoringMove {
     if depth == 0 {
@@ -16,12 +16,14 @@ pub fn minimax(board: &mut Board, depth: u16) -> ScoringMove {
         }
     }
 
-    moves.into_iter()
+    moves
+        .into_iter()
         .map(|mut m: ScoringMove| {
             board.apply_move(m.bit_move);
             m.score = -minimax(board, depth - 1).score;
             board.undo_move();
             m
-        }).max()
+        })
+        .max()
         .unwrap()
 }

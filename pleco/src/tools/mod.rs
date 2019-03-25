@@ -3,23 +3,25 @@
 //! multiple threads. Other useful objects are the `UciLimit` enum and `Searcher` trait
 //! for building bots.
 
-pub mod prng;
 pub mod eval;
-pub mod tt;
 pub mod pleco_arc;
+pub mod prng;
+pub mod tt;
 
-use core::piece_move::BitMove;
 use board::Board;
+use core::piece_move::BitMove;
 
 /// Defines an object that can play chess.
 pub trait Searcher {
     /// Returns the name of the searcher.
-    fn name() -> &'static str where Self: Sized;
+    fn name() -> &'static str
+    where
+        Self: Sized;
 
     /// Returns the BestMove of a position from a search of depth.
     fn best_move(board: Board, depth: u16) -> BitMove
-        where
-            Self: Sized;
+    where
+        Self: Sized;
 }
 
 /// Allows an object to have it's entries pre-fetchable.
